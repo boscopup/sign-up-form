@@ -4,7 +4,8 @@
     --white-from-background: #e2dbd1;
     --logo-color: var(--white-from-background);
     --sidebar-width: 33%;
-    --content-padding: 50px;
+    --content-padding-left: 50px;
+    --content-padding-right: calc(100% - (var(--content-padding-left) + 45ch));
     --content-gap: 35px;
 }
 
@@ -76,12 +77,15 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: var(--content-gap);
+    font-family: Roboto, sans-serif;
 }
 
 #formintro {
     width: 100%;
-    padding-left: var(--content-padding);
+    padding-left: var(--content-padding-left);
+    padding-right: var(--content-padding-right);
     box-sizing: border-box;
+    font-size: 32px;
 }
 
 form {
@@ -92,13 +96,15 @@ form {
 #formarea {
     width: 100%;
     background-color: whitesmoke;
-    padding-left: var(--content-padding);
+    padding-left: var(--content-padding-left);
+    padding-right: var(--content-padding-right);
     box-sizing: border-box;
     box-shadow: 1px 2px 3px rgb(172, 174, 177);
 }
 
 #formfooter {
     width:100%;
-    padding-left: var(--content-padding);
+    padding-left: var(--content-padding-left);
+    padding-right: var(--content-padding-right);
     box-sizing: border-box;
 }
