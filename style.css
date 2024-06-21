@@ -1,0 +1,104 @@
+:root {
+    --green-from-background: #2d4628;
+    --yellow-from-background: #ff9b00;
+    --white-from-background: #e2dbd1;
+    --logo-color: var(--white-from-background);
+    --sidebar-width: 33%;
+    --content-padding: 50px;
+    --content-gap: 35px;
+}
+
+@font-face {
+    font-family: "Frog Toad";
+    src: url("fonts/FrogToad-EaDer.otf") format("opentype");
+    font-weight: normal;
+}
+
+html {
+    background-color: black;
+}
+
+main {
+    width: 75vw;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#image-sidebar {
+    background-image: url(/images/sander-traa-p3wy5MS2rUo-unsplash.jpg);
+    color: var(--logo-color);
+    height: 100%;
+    width: var(--sidebar-width);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#image-sidebar a:visited {
+    color: var(--logo-color);
+}
+#logo img {
+    --frog-size: 8rem;
+    width: var(--frog-size);
+    height: var(--frog-size);
+
+}
+
+#logo {
+    height: 10rem;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: calc(100vh * 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo h1 {
+    font-family: "Frog Toad";
+    font-size: 4rem;
+}
+
+#photo-credit {
+    margin-top: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#content {
+    width: calc(100% - var(--sidebar-width));
+    height: 100%;
+    background-color: var(--white-from-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--content-gap);
+}
+
+#formintro {
+    width: 100%;
+    padding-left: var(--content-padding);
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--content-gap);
+}
+#formarea {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-left: var(--content-padding);
+    box-sizing: border-box;
+    box-shadow: 1px 2px 3px rgb(172, 174, 177);
+}
+
+#formfooter {
+    width:100%;
+    padding-left: var(--content-padding);
+    box-sizing: border-box;
+}
