@@ -78,6 +78,7 @@ main {
     justify-content: center;
     gap: var(--content-gap);
     font-family: Roboto, sans-serif;
+    font-size: 28px;
 }
 
 #formintro {
@@ -85,7 +86,6 @@ main {
     padding-left: var(--content-padding-left);
     padding-right: var(--content-padding-right);
     box-sizing: border-box;
-    font-size: 32px;
 }
 
 form {
@@ -100,6 +100,22 @@ form {
     padding-right: var(--content-padding-right);
     box-sizing: border-box;
     box-shadow: 1px 2px 3px rgb(172, 174, 177);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+#formarea p {
+    margin:0;
+}
+#row1, #row2, #row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: calc(20ch + 50px);
+    gap: 50px;
 }
 
 #formfooter {
@@ -107,4 +123,34 @@ form {
     padding-left: var(--content-padding-left);
     padding-right: var(--content-padding-right);
     box-sizing: border-box;
+}
+
+input {
+    padding: 5px;
+    border: solid 1px #E5E7EB;
+    font-size: 20px;
+}
+
+input:focus {
+    outline-color: var(--yellow-from-background);
+
+}
+
+label, #passwordmatch {
+    font-size: small;
+}
+
+#passwordmatch {
+    color: red;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+#password:invalid, #confirmpassword:invalid {
+    outline-color: red;
 }

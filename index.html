@@ -33,29 +33,36 @@
             <form>
             <div id="formarea">
                 <p>Let's do this!</p>
-                <div class="firstname">
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstname">
+                <div id="row1">
+                    <div class="firstname input">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="lastname input">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
                 </div>
-                <div class="lastname">
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" name="lastname" id="lastname">
+                <div id="row2">
+                    <div class="email input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="phone input">
+                        <label for="phone">TELEPHONE</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
                 </div>
-                <div class="email">
-                    <label for="email">EMAIL</label>
-                    <input type="text" name="email" id="email">
-                </div>
-                <div class="phone">
-                    <label for="phone">TELEPHONE</label>
-                    <input type="text" name="phone" id="phone">
-                </div>
-                <div class="password">
-                    <label for="password"></label>
-                    <input type="text" name="password" id="password">
-                </div>
-                <div class="confirmpassword">
-                    <label for="confirmpassword"></label>
-                    <input type="text" name="confirmpassword" id="confirmpassword">
+                <div id="row3">
+                    <div class="password input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                        <div id="passwordmatch">*Passwords don't match</div>
+                    </div>
+                    <div class="confirmpassword input">
+                        <label for="confirmpassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmpassword" id="confirmpassword">
+                    </div>
                 </div>
             </div>
             <div id="formfooter">
