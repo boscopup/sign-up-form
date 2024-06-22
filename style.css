@@ -28,7 +28,7 @@ main {
 }
 
 #image-sidebar {
-    background-image: url(/images/sander-traa-p3wy5MS2rUo-unsplash.jpg);
+    background-image: url(images/whitelily.jpg);
     color: var(--logo-color);
     height: 100%;
     width: var(--sidebar-width);
