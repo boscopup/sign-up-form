@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="sign-up-form.js"></script>
+    <script src="sign-up-form.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -60,7 +60,7 @@
                             pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$"
                             title="8-16 characters, must contain one each of number, lowercase letter, uppercase letter, and symbol"
                             required>
-                        <div id="passwordmatch">*Passwords don't match</div>
+                        <div id="passwordmatch"></div>
                     </div>
                     <div class="confirmpassword input">
                         <label for="confirmpassword">CONFIRM PASSWORD</label>
