@@ -133,6 +133,7 @@ input {
 
 input:focus {
     outline-color: var(--yellow-from-background);
+    box-shadow: 1px 2px 3px rgb(172, 174, 177);
 
 }
 
@@ -151,6 +152,12 @@ label, #passwordmatch {
     gap: 0px;
 }
 
-#password:invalid, #confirmpassword:invalid {
-    outline-color: red;
+#password:invalid, 
+#confirmpassword:invalid {
+    border: 1px solid red;
+}
+
+#password:valid,
+#confirmpassword:valid {
+    border: solid 2px rgb(5, 199, 5);
 }

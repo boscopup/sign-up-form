@@ -56,12 +56,18 @@
                 <div id="row3">
                     <div class="password input">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" 
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$"
+                            title="8-16 characters, must contain one each of number, lowercase letter, uppercase letter, and symbol"
+                            required>
                         <div id="passwordmatch">*Passwords don't match</div>
                     </div>
                     <div class="confirmpassword input">
                         <label for="confirmpassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmpassword" id="confirmpassword">
+                        <input type="password" name="confirmpassword" id="confirmpassword" 
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$" 
+                            title="8-16 characters, must contain one each of number, lowercase letter, uppercase letter, and symbol"
+                            required>
                     </div>
                 </div>
             </div>
