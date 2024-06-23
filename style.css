@@ -32,6 +32,7 @@ main {
     color: var(--logo-color);
     height: 100%;
     width: var(--sidebar-width);
+    min-width: 325px;
     background-size:cover;
     display: flex;
     flex-direction: column;
@@ -70,7 +71,7 @@ main {
 }
 
 #content {
-    width: calc(100% - var(--sidebar-width));
+    width: clamp(625px, calc(100% - var(--sidebar-width)));
     height: 100%;
     background-color: var(--white-from-background);
     display: flex;
@@ -92,6 +93,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: var(--content-gap);
+    min-width: 660px;
 }
 #formarea {
     width: 100%;
@@ -160,4 +162,28 @@ label, #passwordmatch {
 #password:valid,
 #confirmpassword:valid {
     border: solid 2px rgb(5, 199, 5);
+}
+
+#createaccount {
+    background-color: var(--green-from-background);
+    color: white;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+
+#formfooter p {
+    font-size: 20px;
+}
+
+#loginlink {
+    color: var(--green-from-background);
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+#loginlink:hover {
+    color: var(--yellow-from-background);
 }
